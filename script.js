@@ -4,9 +4,9 @@ function check() {
 
 
     let numbers = /\d/.test(cont)
-    let specials = /[^A-za-z0-9]/.test(cont);
+    let specials = /[^A-Za-z0-9]/.test(cont);
     let big = /[A-Z]/.test(cont);
-    let lenght = cont.length
+    let len = cont.length;
 
 
     console.log(big)
@@ -14,17 +14,17 @@ function check() {
     console.log(specials)
 
 
-    if (cont == null) {
+    if (cont == null || cont == "") {
         textBox.innerText = "WPISZ HASŁO!";
         return;
     }
-    console.log(lenght)
-    if (cont.length > 18 && numbers && specials && big){
+    console.log(len)
+    if (len > 18 && numbers && specials && big){
         textBox.innerHTML = "BARDZO DOBRE";
-    } else if (cont.lenght > 10 && cont.lenght < 17 && numbers) {
+    } else if (len >= 10 && len <= 17 && numbers) {
         textBox.innerHTML = "DOBRE";
         console.log("fsdfsdfsqdfsdafsdgdgfs")
-    } else if (5 < cont.length && 9 > cont.length && numbers) {
+    } else if (len >= 5 && len <= 9 && numbers) {
         textBox.innerHTML = "ŚREDNIE";
     } else {
        textBox.innerHTML = "SŁABE"; 
