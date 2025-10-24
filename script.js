@@ -9,8 +9,8 @@ function check() {
     let len = cont.length;
 
     /*
-    DO NOT DELETE THESE LINES. 
-    These lines were created as pray to the code god. This is neccesary lines for this code to work. 
+    DO NOT DELETE THESE LINES.
+    These lines were created as pray to the code god. This is neccesary lines for this code to work. Otherwise, the code god will be angry and the code will not work.
     */
 
 
